@@ -4,11 +4,12 @@
   box-sizing: border-box;
 }
 :root {
-  --primaryColor: #af9a7d;
+  --primaryColor: #99ccff;
   --mainWhite: #fff;
   --offWhite: #f7f7f7;
   --mainBlack: #222;
   --mainGrey: #ececec;
+  --lightGrey: #cfcfcfa2;
   --darkGrey: #cfcfcf;
   --mainTransition: all 0.3s linear;
   --mainSpacing: 3px;
@@ -19,7 +20,7 @@
 body {
   padding-top: 66px;
   color: var(--mainBlack);
-  background: var(--mainWhite);
+  /* background: var(--mainWhite); */
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   line-height: 1.4;
 }
@@ -93,7 +94,7 @@ h6 {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 0.75rem 2rem;
+  padding: 0.75rem 1rem;
   background: var(--offWhite);
   z-index: 1;
 }
@@ -113,19 +114,20 @@ h6 {
 }
 .nav-links {
   height: 0;
+  margin-left: 1rem;
   overflow: hidden;
   transition: var(--mainTransition);
   list-style-type: none;
 }
 .nav-links a {
-  display: block;
+
   text-decoration: none;
   padding: 1rem 0;
   color: var(--mainBlack);
   transition: var(--mainTransition);
-  text-align: center;
+  text-align: left;
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: 450;
   letter-spacing: var(--mainSpacing);
 }
 .nav-links a:hover {
@@ -141,13 +143,13 @@ h6 {
   }
   .nav-center {
     max-width: 1170px;
-    margin: 0 auto;
+    margin-left: 0.5rem;
     display: flex;
   }
   .nav-links {
     height: auto;
     display: flex;
-    margin-left: 4rem;
+    margin-left: 1rem;
   }
   .nav-links a {
     margin: 0 1rem;
@@ -159,13 +161,13 @@ h6 {
 .defaultHero,
 .roomsHero {
   min-height: calc(100vh - 66px);
-  background: url("./images/defaultBcg.jpeg") center/cover no-repeat;
+  background: url("./images/defaultBcg.jpg") center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .roomsHero {
-  background-image: url("./images/room-2.jpeg");
+  background-image: url("./images/room-2.jpg");
   min-height: 60vh;
 }
 /* End of Hero */
@@ -212,7 +214,7 @@ h6 {
 /* Title */
 .section-title {
   text-align: center;
-  margin-bottom: 4rem;
+  margin-bottom: 1rem;
 }
 .section-title h4 {
   font-size: 2rem;
@@ -233,8 +235,11 @@ h6 {
   padding: 5rem 0;
 }
 .services {
-  background: var(--darkGrey);
+  background: var(--lightGrey);
   text-align: center;
+}
+.service-p{
+  padding:1.5rem;
 }
 .services-center {
   width: 90vw;
