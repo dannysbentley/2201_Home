@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { FaHiking, FaShuttleVan } from "react-icons/fa";
+import { FaHiking } from "react-icons/fa";
 import { MdDirectionsTransit } from "react-icons/md";
 import { IoIosWine } from "react-icons/io";
 import { GiModernCity } from "react-icons/gi";
@@ -21,7 +21,7 @@ export default class Services extends Component {
       {
         icon: <FaHiking />,
         title: "Hiking",
-        info: "Hike the Mount Diablo"
+        info: "Enjoy the out doors.  The house is minutes away from Mount Diablo State Park and Briones Regional Park."
       },
       {
         icon: <GiModernCity />,
@@ -34,7 +34,7 @@ export default class Services extends Component {
     return (
       <section className="services">
         <Title title="Description" />
-        <p className='service-p'>A warm and inviting single level rancher is on a spacious 00,000 +sq ft flat lot, in Hoolbrook neighborhood. Features 3 bedrooms and 2 bath rooms.  Laundry room, hardwood floors and lots of natural lighting.  </p>
+        <p className='service-p'>A warm and inviting single level rancher is on a spacious 6,120 +sq ft flat lot, in Hoolbrook neighborhood. Features 3 bedrooms and 2 bath rooms.  Laundry room, hardwood floors and lots of natural lighting.  </p>
         <div className="services-center">
           {this.state.services.map((item, index) => {
             return (
