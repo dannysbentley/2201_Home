@@ -276,32 +276,7 @@ h6 {
   }
 }
 /*end of services */
-/* featured rooms */
 
-.featured-rooms {
-  padding: 5rem 0;
-}
-.featured-rooms-center {
-  width: 80vw;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
-  grid-row-gap: 2rem;
-  grid-column-gap: 40px;
-}
-@media screen and (min-width: 776px) {
-  .featured-rooms-center {
-    width: 90vw;
-    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
-  }
-}
-@media screen and (min-width: 992px) {
-  .featured-rooms-center {
-    width: 95vw;
-    max-width: 1170px;
-  }
-}
-/* end pf featured rooms */
 /* room */
 .room {
   box-shadow: var(--lightShadow);
@@ -318,24 +293,6 @@ h6 {
   width: 100%;
   display: block;
   transition: var(--mainTransition);
-}
-.price-top {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.8);
-  color: var(--mainWhite);
-  padding: 0.3rem 0.6rem 0.5rem;
-  border-bottom-right-radius: 1rem;
-  font-size: 0.5rem;
-  text-align: center;
-  transition: var(--mainTransition);
-}
-.price-top h6 {
-  margin-bottom: 0;
-  font-size: 0.9rem;
-  font-weight: 300;
-  letter-spacing: var(--mainSpacing);
 }
 .room-link {
   position: absolute;
@@ -467,15 +424,16 @@ h6 {
 /* end of roomlist */
 /*  rooms fitler*/
 .filter-container {
-  padding: 5rem 0;
+  padding: 3rem 0;
 }
 .filter-form {
-  width: 60vw;
+  width: 50vw;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(202px, 1fr));
+  text-align: center;
+  /* display: grid;
+  grid-template-columns: repeat(center-fit, minmax(202px, 1fr));
   grid-row-gap: 2rem;
-  grid-column-gap: 40px;
+  grid-column-gap: 40px; */
 }
 .form-group {
   text-transform: capitalize;
@@ -486,7 +444,7 @@ h6 {
   margin-bottom: 0.5rem;
 }
 .form-control {
-  width: 100%;
+  width: 50%;
   background: transparent;
   font-size: 1rem;
 }

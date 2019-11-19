@@ -21,8 +21,8 @@ export default [
       id: "1"
     },
     fields: {
-      name: "single economy",
-      slug: "single-economy",
+      name: "front yard",
+      slug: "front-yard",
       type: "single",
       price: 100,
       size: 200,

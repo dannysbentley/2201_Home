@@ -34,7 +34,7 @@ export default class Services extends Component {
     return (
       <section className="services">
         <Title title="Description" />
-        <p className='service-p'>A warm and inviting single level rancher is on a spacious 6,120 +sq ft flat lot, in Hoolbrook neighborhood. Features 3 bedrooms and 2 bath rooms.  Laundry room, hardwood floors and lots of natural lighting.  </p>
+        <p className='service-p'>A warm and inviting single level home which is on a spacious 6,120 +sq ft flat lot, in Holbrook Heights neighborhood. Features 3 bedrooms and 2 bath rooms.  Laundry room, hardwood floors and lots of natural lighting.  </p>
         <div className="services-center">
           {this.state.services.map((item, index) => {
             return (
