@@ -28,22 +28,8 @@ export default function RoomFilter({ rooms }) {
 
   return (
     <section className="filter-container">
-      <Title title="Search Living Space" />
+      <Title title="Living Areas" />
       <form className="filter-form">
-        {/*select type*/}
-        <div className="form-group">
-          <label htmlFor="type">Select Space</label>
-          <select
-            name="type"
-            id="type"
-            value={type}
-            className="form-control"
-            onChange={handleChange}
-          >
-            {types}
-          </select>
-        </div>
-        {/*end select type*/}
       </form>
     </section>
   );
