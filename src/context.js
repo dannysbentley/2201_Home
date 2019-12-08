@@ -15,7 +15,8 @@ export default class RoomProvider extends Component {
   getData = async () => {
     try {
       let response = await Client.getEntries({
-        content_type: "home"
+        content_type: "home",
+        order: 'sys.createdAt'
       });
 
       let rooms = this.formatData(response.items);
@@ -30,7 +31,9 @@ export default class RoomProvider extends Component {
     }
   };
 
-  componentDidMount() {}
+  componentDidMount() {
+    this.getData();
+  }
 
   formatData(items) {
     let tempItems = items.map(item => {
@@ -54,7 +57,7 @@ export default class RoomProvider extends Component {
     const name = event.target.name;
     this.setState(
       {
-        [name]: value
+        [name]: target
       },
       this.filterRooms
     );
