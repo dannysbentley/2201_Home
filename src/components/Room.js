@@ -4,7 +4,7 @@ import defaultImg from '../images/room-1.jpeg';
 import PropTypes from 'prop-types'
 
 export default function Room({room}) {
-   const{name,slug,images,prices} = room;
+   const{name,slug,images} = room;
    
   return <article className='room'>
     <div className='img-container'>
@@ -22,6 +22,5 @@ Room.propTypes = {
     name:PropTypes.string.isRequired,
     slug:PropTypes.string.isRequired,
     images:PropTypes.arrayOf(PropTypes.string).isRequired,
-    price:PropTypes.number.isRequired,
   })
 }
